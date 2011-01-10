@@ -1,0 +1,3 @@
+name = "ir_switcher"
+version = "@VERSION@"
+image_dir = "@prefix@/share/pixmaps"

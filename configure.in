@@ -1,0 +1,34 @@
+AC_INIT(src/ir_switcher.py)
+
+dnl AM_CONFIG_HEADER(config.h)
+AM_INIT_AUTOMAKE(ir_switcher, 0.1)
+
+AM_MAINTAINER_MODE
+
+dnl AC_PATH_PROG(GCONFTOOL, gconftool-2)
+dnl AM_GCONF_SOURCE_2
+dnl AC_PROG_INTLTOOL([0.21])
+
+dnl check for python
+AM_PATH_PYTHON
+
+PKG_CHECK_MODULES(PYGTK, pygtk-2.0)
+AC_SUBST(PYGTK_CFLAGS)
+AC_SUBST(PYGTK_LIBS)
+
+dnl ALL_LINGUAS="es ja pl pt sr sr@Latn sv it"
+                                                                                
+dnl GETTEXT_PACKAGE=gnome-blog
+dnl AC_SUBST(GETTEXT_PACKAGE)
+dnl AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [The gettext package])
+
+dnl AM_GLIB_GNU_GETTEXT
+
+AC_OUTPUT([
+Makefile
+src/Makefile
+src/ir_switcher_globals.py
+images/Makefile
+servers/Makefile
+servers/IR_Switcher.server
+])

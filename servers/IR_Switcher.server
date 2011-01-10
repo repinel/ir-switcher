@@ -1,0 +1,30 @@
+<oaf_info>
+
+<oaf_server iid="OAFIID:IR_Switcher_Factory"
+            type="exe"
+            location="/usr/lib/ir-switcher/ir_switcher.py">
+
+        <oaf_attribute name="repo_ids" type="stringv">
+                <item value="IDL:Bonobo/GenericFactory:1.0"/>
+                <item value="IDL:Bonobo/Unknown:1.0"/>
+        </oaf_attribute>
+        <oaf_attribute name="name" type="string" value="IR Switcher"/>
+        <oaf_attribute name="description" type="string" value="Infrared Remote Control Switcher"/>
+</oaf_server>
+
+<oaf_server iid="OAFIID:IR_Switcher"
+            type="factory" 
+            location="OAFIID:IR_Switcher_Factory">
+
+        <oaf_attribute name="repo_ids" type="stringv">
+                <item value="IDL:GNOME/Vertigo/PanelAppletShell:1.0"/>
+                <item value="IDL:Bonobo/Control:1.0"/>
+                <item value="IDL:Bonobo/Unknown:1.0"/>
+        </oaf_attribute>
+        <oaf_attribute name="name" type="string" value="IR Switcher"/>
+        <oaf_attribute name="description" type="string" value="Infrared Remote Switcher"/>
+        <oaf_attribute name="panel:category" type="string" value="Utility"/>
+        <oaf_attribute name="panel:icon" type="string" value="/usr/share/pixmaps/IR_Switcher_on_48.png"/>
+</oaf_server>
+
+</oaf_info>

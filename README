@@ -1,0 +1,10 @@
+
+------------------------------------------------------------
+---               Infrared Remote Switcher               ---
+------------------------------------------------------------
+
+GNOME Applet to enable LIRC. It runs irexec and/or irxevent.
+
+For more information, visit the website: http://code.google.com/p/ir-switcher/
+
+
